@@ -1,0 +1,7 @@
+{
+"project_name": "BeerApp",
+            "env_path": "BeerApp/BeerApp_env",
+            "files_path": "../data/raw/",
+            "key": "<<<<key>>>>",
+            "user": "<<<<user>>>>"
+            }
