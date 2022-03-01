@@ -12,12 +12,29 @@ BOT_NAME = 'scraping_beer'
 SPIDER_MODULES = ['scraping_beer.spiders']
 NEWSPIDER_MODULE = 'scraping_beer.spiders'
 
+# DEFAULT_ITEM_CLASS = 'scraping_beer.items'
+
+ROBOTSTXT_OBEY = True
+# DEPTH_PRIORITY = 1
+
+IMAGE_STORE = 'D:\MyPersonalTraining\BeerApp\scraping_beer\data'
+ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
+
+
+# MEDIA_ALLOW_REDIRECTS = True
+# CONCURRENT_REQUESTS = 250
+# DOWNLOAD_DELAY = 2
+
+# https://shahzaibchadhar.medium.com/how-to-use-scrapy-for-image-download-using-pipelines-in-python-37be4cce6c18
+# IMAGES_URLS_FIELD = 'scrap_beer'
+# IMAGES_RESULT_FIELD = 'scrap_beer_f'
+
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scraping_beer (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

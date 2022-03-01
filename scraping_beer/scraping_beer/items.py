@@ -6,7 +6,11 @@
 import scrapy
 
 
-class ScrapingBeerItem(scrapy.Item):
+class BeerItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    # https://www.geeksforgeeks.org/how-to-download-files-with-scrapy/
+    image_name  = scrapy.Field()
+    tag   = scrapy.Field()
+    price = scrapy.Field()
+    images = scrapy.Field()
+    image_urls = scrapy.Field()
