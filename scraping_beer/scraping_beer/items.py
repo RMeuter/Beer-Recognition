@@ -10,7 +10,8 @@ class BeerItem(scrapy.Item):
     # define the fields for your item here like:
     # https://www.geeksforgeeks.org/how-to-download-files-with-scrapy/
     image_name  = scrapy.Field()
-    tag   = scrapy.Field()
-    price = scrapy.Field()
-    images = scrapy.Field()
-    image_urls = scrapy.Field()
+    manufacturer= scrapy.Field()
+    detail      = scrapy.Field()
+    price       = scrapy.Field()
+    images      = scrapy.Field()
+    image_urls  = scrapy.Field()

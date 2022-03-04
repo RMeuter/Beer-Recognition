@@ -6,3 +6,4 @@ catboost_info/
 .metaflow 
 data/ 
 *_env/
+spiders/
